@@ -70,6 +70,11 @@
               {{ data.index + 1 }}
             </template>
 
+             <!-- H  -->
+            <template #cell(H)="data">
+              {{ data.item.H | formatTo2DP  }}
+            </template>
+
             <!-- Date Column Formatted -->
             <template #cell(created_at)="data">
               {{ data.item.created_at | formatDate }}

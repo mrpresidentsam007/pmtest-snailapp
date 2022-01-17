@@ -55,3 +55,14 @@ Vue.filter('formatTime', function (date) {
 
   return formatted_date
 })
+
+/**
+ * Convert to 2 D.P
+ * @para - String time
+ * @return
+ */
+Vue.filter('formatTo2DP', function (h) {
+  let digit = h;
+  return Number(digit).toFixed(2);
+
+})
